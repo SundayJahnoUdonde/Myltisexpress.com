@@ -1,0 +1,454 @@
+.track .about-bg {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.tracking-bar-section {
+    width: 90%;
+    margin: auto;
+    background: white;
+    border-radius: 5px;
+     padding: 10px; 
+    overflow-x: auto;
+    padding: 60px 20px;
+    border-radius: 5px;
+    white-space: nowrap;
+}
+
+.tracking-bar-section .box {
+    width: 25%;
+    position: relative;
+    display: inline-block;
+    margin-left: -10px;
+}
+
+.tracking-bar-section .box .progress-container {
+    width: 100%;
+    height: 8px;
+    background: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tracking-bar-section .box.active .progress-container {
+    background: #FF440A;
+}
+
+.tracking-bar-section .box.active .progress-container .middle-circle {
+    background: #FF440A;
+    color: white;
+}
+
+.tracking-bar-section .box .progress-container .middle-circle {
+    width: 35px;
+    height: 35px;
+    border-radius: 35px;
+    background: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: grey;
+    font-size: 15px;
+}
+
+.tracking-bar-section .box:first-child .progress-container {
+    border-radius: 5px 0px 0px 5px;
+}
+
+.tracking-bar-section .box:last-child .progress-container {
+    border-radius: 0px 5px 5px 0px;
+}
+
+.tracking-bar-section .box .status {
+    width: 100%;
+    text-align: center;
+    color: rgb(32, 32, 32);
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 20px;
+    padding: 0px 10px;
+}
+
+.tracking-bar-section .box .note {
+    width: 100%;
+    text-align: center;
+    color: #fa693d;
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 10px;
+    padding: 0px 10px;
+}
+
+.tracking-bar-section .box .date {
+    width: 100%;
+    text-align: center;
+    color: rgb(104, 104, 104);
+    font-size: 12px;
+    margin-top: 5px;
+    padding: 0px 10px;
+}
+*/
+.bar-code-container {
+    position: relative;
+    width: 100%;
+    padding: 20px 0px;
+}
+
+.bar-code-container .logo-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.bar-code-container .logo-container .logo {
+    width: 150px;
+    height: auto;
+}
+
+
+/** Vertical start **/
+
+.tracking-bar-section .box {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    padding-bottom: 20px;
+}
+
+.tracking-bar-section .box .progress-container {
+    width: 8px;
+    height: 100%;
+    margin-right: 20px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.tracking-bar-section .box:first-child .progress-container {
+    border-radius: 5px 5px 0px 0px;
+}
+
+.tracking-bar-section .box:last-child .progress-container {
+    border-radius: 0px 0px 5px 5px;
+}
+
+.tracking-bar-section .box .progress-container .middle-circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    font-size: 13px;
+    position: absolute;
+    top: 40%;
+    left: -17px;
+}
+
+.tracking-bar-section .box .details {
+    margin-left: 30px;
+}
+
+.tracking-bar-section .box .status {
+    text-align: left;
+    white-space: wrap;
+}
+
+.tracking-bar-section .box .note {
+    font-size: 13px;
+    white-space: wrap;
+    text-align: left;
+}
+
+.tracking-bar-section .box .date {
+    font-size: 11px;
+    white-space: wrap;
+    text-align: left;
+}
+
+
+/** Vertical end **/
+
+.sender-and-receiver-container {
+    width: 90%;
+    position: relative;
+    margin: auto;
+}
+
+.sender-and-receiver-container h5 {
+    border-bottom: 1px solid lightgrey;
+    padding-bottom: 15px;
+}
+
+.shipment-information-container {
+    width: 90%;
+    margin: auto;
+    position: relative;
+}
+
+.shipment-information-container .section-title {
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    background: #FF440A;
+    border-radius: 5px;
+    color: white;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.shipment-information-container .image-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px;
+}
+
+.shipment-information-container .image-container .image {
+    width: 300px;
+    height: auto;
+}
+
+.google-maps-container {
+    width: 90%;
+    /* height: 400px; */
+    background: #eee;
+    margin: auto;
+    position: relative;
+}
+
+.print-receipt-container {
+    width: 70%;
+    margin: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.print-receipt-container .print-receipt-btn {
+    padding: 10px 30px;
+    background: #FF440A;
+    color: white;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.receipt {
+    width: 800px;
+    margin: auto;
+    border: 1px solid lightgrey;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 30px 10px;
+    position: relative;
+}
+
+.receipt .watermark-container {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    opacity: 0.1;
+}
+
+.receipt .watermark-container .watermark-image {
+    width: 80%;
+    height: auto;
+    transform: rotate(-50deg)
+}
+
+.receipt .top-section {
+    width: 100%;
+}
+
+.receipt .top-section .logo-container {
+    position: relative;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.receipt .top-section .logo-container .logo {
+    width: 150px;
+    height: auto;
+}
+
+.receipt .top-section .invoice-summary-container {
+    /* width: 100%; */
+    border: 1px solid lightgrey;
+}
+
+.receipt .top-section .invoice-summary-container .box {
+    width: 100%;
+    padding: 10px;
+    border-bottom: 1px solid lightgrey;
+    font-size: 16px;
+    display: flex;
+    flex-flow: row nowrap;
+    font-weight: 600;
+}
+
+.receipt .top-section .invoice-summary-container .box .left {
+    position: relative;
+    width: 40%;
+}
+
+.receipt .top-section .invoice-summary-container .box .right {
+    position: relative;
+    width: 60%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.receipt table {
+    width: 100%;
+    margin-top: 40px;
+}
+
+.receipt table thead {
+    width: 100%;
+    background: #eee;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.receipt table thead th {
+    padding: 10px;
+}
+
+.receipt table thead th:first-child {
+    border-radius: 5px 0px 0px 5px;
+}
+
+.receipt table thead th:last-child {
+    border-radius: 0px 5px 5px 0px;
+}
+
+
+/* .receipt table tbody tr {
+    border-bottom: 1px solid lightgrey;
+} */
+
+
+/* .receipt table tbody tr.summary {
+    border-bottom:none;
+} */
+
+.receipt table tbody tr td.summary {
+    border: 1px solid lightgrey;
+}
+
+.receipt table tbody tr td.total-charge {
+    background: #eee;
+    font-weight: 600;
+}
+
+.receipt table tbody tr td {
+    padding: 10px;
+}
+
+.receipt .go-back-btn {
+    padding: 10px 30px;
+    background: #FF440A;
+    color: white;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    position: relative;
+    z-index: 50;
+}
+
+
+/** Small screens start ***/
+
+@media only screen and (max-width: 690px) {
+    .mobile-logo {
+        position: relative;
+        top: 10px;
+        left: -20px;
+    }
+
+    .mean-container a.meanmenu-reveal {
+        right: -100px !important;
+        top: 10px !important;
+    }
+
+    .slider-content h2 {
+        font-size: 50px !important;
+    }
+
+    .slider-form input {
+        width: 100%;
+        margin-bottom: 0px;
+    }
+
+    .category-list ul {
+        flex-direction: column;
+    }
+
+    .category-list ul li a {
+        width: 100%;
+    }
+
+    .tracking-bar-section .box {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        padding-bottom: 20px;
+    }
+
+    .tracking-bar-section .box .progress-container {
+        width: 8px;
+        height: 100%;
+        margin-right: 20px;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+
+    .tracking-bar-section .box:first-child .progress-container {
+        border-radius: 5px 5px 0px 0px;
+    }
+
+    .tracking-bar-section .box:last-child .progress-container {
+        border-radius: 0px 0px 5px 5px;
+    }
+
+    .tracking-bar-section .box .progress-container .middle-circle {
+        width: 40px;
+        height: 40px;
+        border-radius: 40px;
+        font-size: 13px;
+        position: absolute;
+        top: 40%;
+        left: -17px;
+    }
+
+    .tracking-bar-section .box .details {
+        margin-left: 30px;
+    }
+
+    .tracking-bar-section .box .status {
+        text-align: left;
+        white-space: wrap;
+    }
+
+    .tracking-bar-section .box .note {
+        font-size: 13px;
+        white-space: wrap;
+        text-align: left;
+    }
+
+    .tracking-bar-section .box .date {
+        font-size: 11px;
+        white-space: wrap;
+        text-align: left;
+    }
+}
+
+
+/*** Small screens end ***/
